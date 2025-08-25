@@ -1,134 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Veena Madhuri Makke | Portfolio</title>
-
-  <!-- AOS Scroll Animation CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
-  <style>html { scroll-behavior: smooth; }</style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <!-- Navbar -->
   <nav class="navbar">
-    <ul>
-      <li><a href="#hero">Home</a></li>
+    <div class="logo">Veena Madhuri Makke</div>
+    <ul class="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
-      <li><a href="#internships">Internships</a></li>
       <li><a href="#projects">Projects</a></li>
-      <li><a href="#certificates">Certificates</a></li>
-      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#certifications">Certificates</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 
-  <!-- Hero -->
-  <section id="hero" class="hero" data-aos="fade-up">
-    <h1>Hi, I'm Veena Madhuri 👩‍💻</h1>
-    <p>Aspiring Web Developer & Tester</p>
-    <img src="assets/profile.jpg" alt="Veena's photo">
-  </section>
-
   <!-- About -->
-  <section id="about" class="about" data-aos="fade-up">
+  <section id="about" class="card">
     <h2>About Me</h2>
-    <p>I’m a Computer Science Engineering graduate skilled in development, testing, and AI/ML. Passionate about building impactful tech products and continuously upskilling for industry needs.</p>
+    <p>
+      Hi 👋 I’m <strong>Veena Madhuri Makke</strong>, a passionate Software Engineer with hands-on 
+      experience in Web Development, Software Testing, and AI/ML.  
+      I love designing clean UI, solving real-world problems, and continuously learning new technologies.
+    </p>
   </section>
 
   <!-- Skills -->
-  <section id="skills" class="skills" data-aos="fade-up">
+  <section id="skills" class="card">
     <h2>Skills</h2>
-    <div class="skill-box"><strong>🧪 Testing:</strong> Selenium (Python, Java), API Testing</div>
-    <div class="skill-box"><strong>💻 Languages:</strong> Java, Python, C, SQL</div>
-    <div class="skill-box"><strong>🌐 Web:</strong> HTML, CSS</div>
-    <div class="skill-box"><strong>🤖 AI/ML:</strong> TensorFlow, Scikit-learn, Pandas, NumPy</div>
-    <div class="skill-box"><strong>🛠 Tools:</strong> GitHub, Jupyter Notebook, VS Code</div>
-    <div class="skill-box"><strong>🎨 Design:</strong> Canva, Figma (Basic)</div>
-  </section>
-
-  <!-- Internships -->
-  <section id="internships" class="internships" data-aos="fade-up">
-    <h2>Internships</h2>
-    <div class="project-card">
-      <h3>Software Testing Intern – ExcelR EdTech (6 Weeks)</h3>
-      <ul>
-        <li>Developed and executed automated test scripts using Selenium in Python and Java.</li>
-        <li>Conducted API testing for web applications, identifying critical bugs early.</li>
-        <li>Streamlined testing processes, reducing manual testing time by 30%.</li>
-      </ul>
-    </div>
-    <div class="project-card">
-      <h3>AI Intern – SkillDzire (2 Months)</h3>
-      <ul>
-        <li>Built supervised ML models for predictive analytics using Python and Scikit-learn.</li>
-        <li>Led data preprocessing and EDA tasks, improving model performance by 25%.</li>
-      </ul>
-    </div>
-    <div class="project-card">
-      <h3>AI-Data Analytics Intern – Rooman Technologies (3 Months)</h3>
-      <ul>
-        <li>Executed real-time ML projects involving classification and regression models.</li>
-        <li>Enhanced accuracy of predictive models through advanced feature engineering.</li>
-      </ul>
+    <div class="grid">
+      <div class="skill-card"><strong>Testing:</strong> Selenium (Python, Java), API Testing</div>
+      <div class="skill-card"><strong>Languages:</strong> Java, Python, C, SQL</div>
+      <div class="skill-card"><strong>Web:</strong> HTML, CSS</div>
+      <div class="skill-card"><strong>AI/ML:</strong> TensorFlow, Scikit-learn, Pandas, NumPy</div>
+      <div class="skill-card"><strong>Tools:</strong> GitHub, Jupyter Notebook, VS Code</div>
+      <div class="skill-card"><strong>Design:</strong> Canva, Figma (Basic)</div>
     </div>
   </section>
 
   <!-- Projects -->
-  <section id="projects" class="projects" data-aos="fade-up">
+  <section id="projects" class="card">
     <h2>Projects</h2>
-    <div class="project-card">
-      <h3>Cyberbullying Detection in Social Networks</h3>
-      <p>Designed a system to detect cyberbullying using NLP and ML. Achieved 72.42% F-measure with DistilBERT.</p>
-      <a href="https://github.com/Veena-MadhuriMakke/CYBERBULLYING-DETETCTION" target="_blank">View on GitHub</a>
-    </div>
-    <div class="project-card">
-      <h3>Women's Breast Cancer Prediction</h3>
-      <p>Developed a model using Decision Tree classifier to classify breast cancer cases. Visualized model performance.</p>
-      <a href="https://github.com/yourusername/breast-cancer-predictor" target="_blank">View on GitHub</a>
-    </div>
-    <div class="project-card">
-      <h3>Handwriting Prediction</h3>
-      <p>Built a CNN using TensorFlow and Keras to classify digits from MNIST dataset with high accuracy.</p>
-      <a href="https://github.com/Veena-MadhuriMakke/wbc" target="_blank">View on GitHub</a>
+    <div class="grid">
+      <div class="project-card">
+        <h3>Cyberbullying Detection</h3>
+        <p>AI-powered system to detect and classify offensive content online.</p>
+      </div>
+      <div class="project-card">
+        <h3>Women’s Breast Cancer Prediction</h3>
+        <p>ML model built with Python & Scikit-learn for early detection.</p>
+        <a href="https://drive.google.com/file/d/1L_q7zQ9nwxv9QXGiq_saK47cFOUoDahQ/view?usp=sharing" target="_blank" class="btn">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>Hand Writing Detection</h3>
+        <p>Built a CNN-based model using TensorFlow and Keras to classify handwritten digits from the MNIST dataset, achieving high accuracy in digit recognition tasks.</p>
+        <a href="https://drive.google.com/file/d/1_sErCRfSNvvs1V7QSr0IcWcPyF4UxXHR/view?usp=sharing" target="_blank" class="btn">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>UI Design</h3>
+        <p>Clean, minimal, and mobile-friendly portfolio design.</p>
+        <a href="https://drive.google.com/file/d/1dKp6lCYpJSTqMxdsWns8QCYa6y1KGqqP/view?usp=sharing" target="_blank" class="btn">View Project</a> 
+      </div>
     </div>
   </section>
 
-  <!-- Certificates -->
-  <section id="certificates" class="certificates" data-aos="fade-up">
-    <h2>Certificates</h2>
-    <ul>
-      <li>Java training & certification - Besant Technologies</li>
-      <li>Accenture Forage - Data Analytics and Visualization</li>
-      <li>Cognizant Forage - Artificial Intelligence Job Simulation</li>
-    </ul>
-  </section>
+    <!-- Certifications -->
+    <section class="card" id="certifications">
+      <h2>Certifications</h2>
+      <ul>
+        <li>Java Training – Besant Technologies</li>
+        <li>Accenture Forage - Data Analytics and Visualization</li>
+        <li>Cognizant Forage - AI Simulation</li>
+      </ul>
+      <a href="https://drive.google.com/drive/folders/1Z59q9sVaCX-R8O5Qh5bdQSQ3728Gl5os?usp=sharing" target="_blank" class="btn">View My Certificates</a>
+    </section>
 
-  <!-- Achievements -->
-  <section id="achievements" class="achievements" data-aos="fade-up">
-    <h2>Achievements</h2>
-    <ul>
-      <li>1st Prize - AGUILA 2024 Project Expo - S.V. Group of Institutions</li>
-      <li>2nd Rank - Inter Innovative Idea Contest 2024 - RSR Engineering College</li>
-      <li>2nd Prize - Quiz Competition - RSR Engineering College</li>
-      <li>2nd Prize - Elocution Competition (National Education Day) - RSR Engineering College</li>
-    </ul>
-  </section>
+   <!-- Achievements -->
+    <section class="card">
+      <h2>Achievements</h2>
+      <ul>
+        <li>1st Prize – AGUILA 2024 Project Expo (S.V. Group of Institutions)</li>
+        <li>2nd Rank – Inter Innovative Idea Contest 2024 (RSR Engineering College)</li>
+        <li>2nd Prize – Quiz Competition (RSR Engineering College)</li>
+        <li>2nd Prize – Elocution Competition (National Education Day, RSR)</li>
+      </ul>
+    </section>
 
   <!-- Contact -->
-  <section id="contact" class="contact" data-aos="fade-up">
-    <h2>Contact Me</h2>
-    <p>Email: <a href="mailto:veenamakke@gmail.com">veenamakke@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/veena-madhuri-makke-1568a7305" target="_blank">/veena-madhuri-makke</a></p>
-    <p>GitHub: <a href="https://github.com/Veena-MadhuriMakke" target="_blank">github.com/Veena-MadhuriMakke</a></p>
-    <br>
-    <a href="assets/resume.pdf" download>📄 Download My Resume</a>
+  <section id="contact" class="card">
+    <h2>Contact</h2>
+    <p>📧 Email: <a href="mailto:veenamakke@gmail.com">veenamakke@gmail.com</a></p>
+    <p>🔗 LinkedIn: <a href="https://www.linkedin.com/in/veena-madhuri-makke" target="_blank">Veena Madhuri Makke</a></p>
+    <p>🔗 GitHub: <a href="https://github.com/Veena-MadhuriMakke" target="_blank">Veena Madhuri Makke</a></p>
   </section>
 
-  <!-- AOS Animation Script -->
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script>AOS.init();</script>
+  <footer>
+    <p>© 2025 Veena Madhuri Makke | Portfolio</p>
+  </footer>
+
 </body>
 </html>
